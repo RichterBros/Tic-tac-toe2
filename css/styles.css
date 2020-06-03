@@ -1,4 +1,4 @@
-.grid-container {
+#grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
     background-color: #2196F3;
@@ -96,3 +96,27 @@
     width: 200px;
     height: 200px;
   }
+
+
+  .x {
+    text-align: center;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    font-size: 150px;
+  
+    }
+
+    .o {
+        text-align: center;
+        position: relative;
+        width: 200px;
+        height: 200px;
+        background-color: green;
+        font-size: 150px;
+      
+        }
+
+
+  
