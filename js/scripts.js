@@ -24,6 +24,54 @@ $(document).ready(function(){
         console.log(ticTacToe.count);
         console.log(ticTacToe.counter())
     });
+
+    $( ".grid-item4" ).click(function() {
+      
+        ticTacToe.counter();
+        ticTacToe.one4();
+        console.log(ticTacToe.count);
+        console.log(ticTacToe.counter())
+    });
+
+    $( ".grid-item5" ).click(function() {
+      
+        ticTacToe.counter();
+        ticTacToe.one5();
+        console.log(ticTacToe.count);
+        console.log(ticTacToe.counter())
+    });
+
+    $( ".grid-item6" ).click(function() {
+      
+        ticTacToe.counter();
+        ticTacToe.one6();
+        console.log(ticTacToe.count);
+        console.log(ticTacToe.counter())
+    });
+
+    $( ".grid-item7" ).click(function() {
+      
+        ticTacToe.counter();
+        ticTacToe.one7();
+        console.log(ticTacToe.count);
+        console.log(ticTacToe.counter())
+    });
+
+    $( ".grid-item8" ).click(function() {
+      
+        ticTacToe.counter();
+        ticTacToe.one8();
+        console.log(ticTacToe.count);
+        console.log(ticTacToe.counter())
+    });
+
+    $( ".grid-item9" ).click(function() {
+      
+        ticTacToe.counter();
+        ticTacToe.one9();
+        console.log(ticTacToe.count);
+        console.log(ticTacToe.counter())
+    });
     
         function TicTacToe(one,two,three,four,five,six,seven,eight,nine,){
             this.one = one;
@@ -56,8 +104,8 @@ $(document).ready(function(){
         this.one = ".grid-item1";
         this.x = "x";
         this.o = "o";
-        this.count +=1 ;
-       
+        this.count +=1;
+        
         if (this.counter() === false){
      
             $(this.one).removeClass().addClass(this.x).prepend("<p>X</p>");
@@ -66,8 +114,13 @@ $(document).ready(function(){
              $(this.one).removeClass().addClass(this.o).prepend("<p>O</p>");
      
             }
+        if ($("#box1").hasClass("x")){
+            alert("x!")
+            }
         }
+
     
+
         TicTacToe.prototype.one2 = function(){
             this.two = ".grid-item2";
             this.x = "x";
@@ -99,7 +152,105 @@ $(document).ready(function(){
          
             }
         }
+
+        TicTacToe.prototype.one4 = function(){
+            this.four = ".grid-item4";
+            this.x = "x";
+            this.o = "o";
+            this.count +=1 ;
+           
+            if (this.counter() === false){
+         
+                $(this.four).removeClass().addClass(this.x).prepend("<p>X</p>");
+                 
+                }else if (this.counter() === true){
+                 $(this.four).removeClass().addClass(this.o).prepend("<p>O</p>");
+         
+            }
+        }
+
+        TicTacToe.prototype.one5 = function(){
+            this.five = ".grid-item5";
+            this.x = "x";
+            this.o = "o";
+            this.count +=1 ;
+           
+            if (this.counter() === false){
+         
+                $(this.five).removeClass().addClass(this.x).prepend("<p>X</p>");
+                 
+                }else if (this.counter() === true){
+                 $(this.five).removeClass().addClass(this.o).prepend("<p>O</p>");
+         
+            }
+        }
+
+        TicTacToe.prototype.one6 = function(){
+            this.six = ".grid-item6";
+            this.x = "x";
+            this.o = "o";
+            this.count +=1 ;
+           
+            if (this.counter() === false){
+         
+                $(this.six).removeClass().addClass(this.x).prepend("<p>X</p>");
+                 
+                }else if (this.counter() === true){
+                 $(this.six).removeClass().addClass(this.o).prepend("<p>O</p>");
+         
+            }
+        }
+
+        TicTacToe.prototype.one7 = function(){
+            this.seven = ".grid-item7";
+            this.x = "x";
+            this.o = "o";
+            this.count +=1 ;
+           
+            if (this.counter() === false){
+         
+                $(this.seven).removeClass().addClass(this.x).prepend("<p>X</p>");
+                 
+                }else if (this.counter() === true){
+                 $(this.seven).removeClass().addClass(this.o).prepend("<p>O</p>");
+         
+            }
+        }
+    
+        TicTacToe.prototype.one8 = function(){
+            this.eight = ".grid-item8";
+            this.x = "x";
+            this.o = "o";
+            this.count +=1 ;
+           
+            if (this.counter() === false){
+         
+                $(this.eight).removeClass().addClass(this.x).prepend("<p>X</p>");
+                 
+                }else if (this.counter() === true){
+                 $(this.eight).removeClass().addClass(this.o).prepend("<p>O</p>");
+         
+            }
+        }
+
+        TicTacToe.prototype.one9 = function(){
+            this.nine = ".grid-item9";
+            this.x = "x";
+            this.o = "o";
+            this.count +=1 ;
+           
+            if (this.counter() === false){
+         
+                $(this.nine).removeClass().addClass(this.x).prepend("<p>X</p>");
+                 
+                }else if (this.counter() === true){
+                 $(this.nine).removeClass().addClass(this.o).prepend("<p>O</p>");
+         
+            }
+        }
+    
     });
+
     
         
         
